@@ -1,0 +1,28 @@
+Sample Input
+
+HACK 2
+
+Sample Output
+
+AA
+AC
+AH
+AK
+CC
+CH
+CK
+HH
+HK
+KK
+
+
+AMSWER::----------
+
+
+import itertools
+n= input().split()
+v=list(itertools.combinations_with_replacement(sorted(n[0]),int(n[1])))
+for i in v:
+    for e in i:
+        print(e,end="")
+    print()
