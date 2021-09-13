@@ -1,0 +1,32 @@
+Sample Input
+
+HACK 2
+
+Sample Output
+
+AC
+AH
+AK
+CA
+CH
+CK
+HA
+HC
+HK
+KA
+KC
+KH
+
+
+ANSWER::
+
+from itertools import permutations
+
+
+n=input().split()
+v=list(permutations(n[0],int(n[1])))
+v.sort()
+for i in v:
+    for j in i:
+        print(j,end="")
+    print()
