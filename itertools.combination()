@@ -18,25 +18,9 @@ HK
 
 ------------------------------------ANSWER::-----------------------------------------
 
-
-
+    
+    
 import itertools
-n= input().split()
-M=list(itertools.combinations(sorted(n[0]),1))
-for k in M:
-    for o in k:
-        print(o)
-v=list(itertools.combinations(sorted(n[0]),int(n[1])))
-v.sort()
-for i in v:
-    for j in i:
-        print(j,end="")
-    print()
-    
-    ----------------------------------ANOTHER WAY-------------------------------------
-    
-    
-    import itertools
 n= input().split()
 for i in range(1,int(n[1])+1):
     OUTPUT=list(itertools.combinations(sorted(n[0]),i))
