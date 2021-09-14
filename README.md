@@ -6,3 +6,5 @@
  4) itertools.combination_with_replacement()
  5) compress the string 
  6) iterables and iterators
+ 7) maximize it
+ 8) 
