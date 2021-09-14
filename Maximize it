@@ -1,0 +1,29 @@
+Sample Input
+
+3 1000
+2 5 4
+3 7 8 9 
+5 5 7 8 9 10 
+
+Sample Output
+
+206
+
+
+----------------------ANSWER-----------------------
+
+
+from itertools import product
+v=list(map(int,input().split()))
+m=[]
+for i in range(v[0]):
+    m.append(list(map(int,input().split()))[1:])
+a=list(product(*m))
+b=[]
+for j in a:
+    s=0
+    for k in j:
+        s+=k**2
+    b.append(s%v[1])
+print(max(b))
+    
