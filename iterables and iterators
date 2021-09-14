@@ -1,0 +1,24 @@
+Sample Input
+
+4 
+a a c d
+2
+
+Sample Output
+
+0.8333
+
+Explanation
+
+
+ANSWER-------------------
+
+from itertools import combinations, count
+n=int(input())
+l1=input().split()
+k= int(input())
+count=0
+for i in combinations(l1,k):
+    if "a" in i:
+        count+=1
+print((count/len(list(combinations(l1,k)))))
