@@ -5,3 +5,4 @@
  3) itertools.combination()
  4) itertools.combination_with_replacement()
  5) compress the string 
+ 6) iterables and iterators
